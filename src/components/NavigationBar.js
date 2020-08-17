@@ -21,7 +21,7 @@ const NavigationBar = () => {
     return (
         !visible ?
             <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" style={{ position: 'sticky', top: '0', transition: '200ms'}}>
-                <Navbar.Brand href="/"><Logo src={logo}/>Redesign For Me</Navbar.Brand>
+                <Navbar.Brand href="/"><Logo src={logo} style={{width: '50px', height: '50px'}}/>Redesign For Me</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
@@ -33,7 +33,7 @@ const NavigationBar = () => {
             </Navbar>
         :
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" style={{ position: 'sticky', top: '0', transition: '200ms', boxShadow: '10px 0px 4px #333'}}>
-                <Navbar.Brand href="/"><Logo src={logo}/>Redesign For Me</Navbar.Brand>
+                <Navbar.Brand href="/"><Logo src={logo} style={{width: '50px', height: '50px'}}/>Redesign For Me</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
