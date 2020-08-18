@@ -11,7 +11,7 @@ export default () => {
             <div style={{height: '100px'}}></div>
             <Background src = {background}/>
             <Title>Redesign for Me</Title>
-            <TagLine>Web Solutions For Business</TagLine>
+            <TagLine>Web Solutions Made Simple</TagLine>
             <FDRow>
                 <CallToAction onClick = {() => {window.location.href='/contact'}}>Contact</CallToAction>
                 <CallToAction onClick = {() => {window.location.href = '/services'}}>Services</CallToAction>

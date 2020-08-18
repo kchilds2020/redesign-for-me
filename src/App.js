@@ -4,6 +4,8 @@ import { Root, Routes, addPrefetchExcludes } from 'react-static'
 import { Link, Router } from 'components/Router'
 import Dynamic from 'containers/Dynamic'
 import NavigationBar from 'components/NavigationBar'
+import {Helmet} from "react-helmet";
+import Spinner from 'react-bootstrap/Spinner'
 
 import './app.css'
 
@@ -13,9 +15,13 @@ addPrefetchExcludes(['dynamic'])
 function App() {
   return (
     <Root>
+    <Helmet>
+                <meta charSet="utf-8" />
+                <title>Redesign For Me</title>
+      </Helmet>
       <NavigationBar />
       <div className="content">
-        <React.Suspense fallback={<em>Loading...</em>}>
+        <React.Suspense fallback={<div style ={{display: 'flex', justifyContent: 'center', marginTop: '50px'}}><Spinner animation="border" variant='primary'/></div>}>
           <Router>
             <Dynamic path="dynamic" />
             <Routes path="*" />
