@@ -16,6 +16,13 @@
   "entry": "index.js",
   "plugins": [
     [
+      "react-static-plugin-favicons",
+      {
+        "outputDir": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\dist",
+        "inputFile": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\logo.png"
+      }
+    ],
+    [
       "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
       {
         "location": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\src\\pages"

@@ -25,6 +25,11 @@ export default {
   }, */
   plugins: [
     [
+      'react-static-plugin-favicons',
+      { outputDir: path.join(__dirname, 'dist'),
+        inputFile: path.resolve(__dirname, 'logo.png') },
+    ],
+    [
       require.resolve('react-static-plugin-source-filesystem'),
       {
         location: path.resolve('./src/pages'),
