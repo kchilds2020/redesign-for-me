@@ -26,9 +26,9 @@ const NavigationBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                        <Nav.Link><Link to="/services">Services</Link></Nav.Link>
-                        <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/services">Services</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -38,9 +38,9 @@ const NavigationBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                        <Nav.Link><Link to="/services">Services</Link></Nav.Link>
-                        <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
+                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="/services">Services</Nav.Link>
+                        <Nav.Link href="/contact">Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
