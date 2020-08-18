@@ -2,6 +2,7 @@ import React from 'react'
 import {CallToAction} from 'components/styles/general'
 import styled from 'styled-components'
 import { FcViewDetails, FcFile, FcCellPhone } from "react-icons/fc";
+import { Link, Router } from 'components/Router'
 
 const Services = () => {
     return (
@@ -37,7 +38,7 @@ const Services = () => {
                 <Card>
                     <h2 style={{textAlign: 'center'}}>Contact to for a free quote!</h2>
                     <Center><FcCellPhone size={200}/></Center>
-                    <FlexEnd><CallToAction style={{margin: 'auto'}} onClick = {() => {window.location.href = '/contact'}}>Contact</CallToAction></FlexEnd>
+                    <Center><FlexEnd><Link to='/contact'><CallToAction>Contact</CallToAction></Link></FlexEnd></Center>
                 </Card>
             </Cards>
         </Body>

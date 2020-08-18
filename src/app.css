@@ -3,3 +3,12 @@
   scroll-behavior: smooth;
   font-family: 'Viga', sans-serif;
 }
+
+a{
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #aaa;
+}

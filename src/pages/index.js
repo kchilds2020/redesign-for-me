@@ -3,6 +3,7 @@ import {Header, Title, TagLine, CallToAction, FDRow} from 'components/styles/gen
 import background from 'images/background.jpg'
 import styled from 'styled-components'
 import picture from 'images/Official-RFM-Logo.png'
+import { Link, Router } from 'components/Router'
 
 export default () => {
     return (
@@ -13,9 +14,8 @@ export default () => {
             <Title>Redesign for Me</Title>
             <TagLine>Web Solutions Made Simple</TagLine>
             <FDRow>
-                <CallToAction onClick = {() => {window.location.href='/contact'}}>Contact</CallToAction>
-                <CallToAction onClick = {() => {window.location.href = '/services'}}>Services</CallToAction>
-                
+                <Link to='/contact'><CallToAction>Contact</CallToAction></Link>
+                <Link to='/services'><CallToAction>Services</CallToAction></Link>                
             </FDRow>
         </Header>
         <Section> 

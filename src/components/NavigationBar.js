@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import styled from 'styled-components'
 import logo from 'images/logo.png'
+import { Link, Router } from 'components/Router'
 
 const NavigationBar = () => {
 
@@ -25,9 +26,9 @@ const NavigationBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/services">Services</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                        <Nav.Link><Link to="/services">Services</Link></Nav.Link>
+                        <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
@@ -37,9 +38,9 @@ const NavigationBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/services">Services</Nav.Link>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link><Link to="/">Home</Link></Nav.Link>
+                        <Nav.Link><Link to="/services">Services</Link></Nav.Link>
+                        <Nav.Link><Link to="/contact">Contact</Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
