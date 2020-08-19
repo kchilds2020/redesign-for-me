@@ -14,8 +14,8 @@ export default () => {
             <Title>Redesign for Me</Title>
             <TagLine>Web Solutions Made Simple</TagLine>
             <FDRow>
-                <Link to='/contact'><CallToAction>Contact</CallToAction></Link>
-                <Link to='/services'><CallToAction>Services</CallToAction></Link>                
+                <Link to='/contact' style={{width: '100%'}}><CallToAction>Contact</CallToAction></Link>
+                <Link to='/services' style={{width: '100%'}}><CallToAction>Services</CallToAction></Link>                
             </FDRow>
         </Header>
         <Section> 

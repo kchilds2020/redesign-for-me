@@ -38,7 +38,7 @@ const Services = () => {
                 <Card>
                     <h2 style={{textAlign: 'center'}}>Contact to for a free quote!</h2>
                     <Center><FcCellPhone size={200}/></Center>
-                    <Center><FlexEnd><Link to='/contact'><CallToAction>Contact</CallToAction></Link></FlexEnd></Center>
+                    <Center><Link to='/contact' style={{width: '100%'}}><CallToAction style={{width: '100%'}}>Contact</CallToAction></Link></Center>
                 </Card>
             </Cards>
         </Body>
@@ -50,12 +50,14 @@ const Center = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 `
 
 const FlexEnd = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    width: 100%;
 `
 
 const Cards = styled.div`
