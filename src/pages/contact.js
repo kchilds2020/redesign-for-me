@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {Header} from 'components/styles/general'
 import { FcPhone } from "react-icons/fc";
 import styled from "styled-components"
 

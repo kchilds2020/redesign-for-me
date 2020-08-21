@@ -1,5 +1,4 @@
 import React from 'react'
-import {CallToAction} from 'components/styles/general'
 import styled from 'styled-components'
 import { FcViewDetails, FcFile, FcCellPhone } from "react-icons/fc";
 import { Link, Router } from 'components/Router'
@@ -78,6 +77,33 @@ const Body = styled.div`
     margin: auto;
     font-size: 18px;
     padding: 20px;
+`
+
+export const CallToAction = styled.button`
+    margin: 20px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(44, 114, 211);
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0px 0px 8px #333;
+    transition: 400ms;
+
+    :hover{
+        background-color: rgb(44, 114, 250);
+        transition: 400ms;
+    }
+
+    :focus{
+        outline: none;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+  }
 `
 
 export default Services
