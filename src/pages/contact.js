@@ -37,9 +37,11 @@ const Contact = () => {
 
     return (
         <Body>
+            <div>
             <Info>
                 <h2>Contact Us for a Free Quote! </h2>
                 <p>Please complete the form and I will get back to you as soon as possible! You can also email me at kevinchilds@redesignforme.com.</p>
+
             </Info>
                 
             <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
@@ -55,13 +57,13 @@ const Contact = () => {
                 <TextArea value={message} onChange={e => setMessage(e.target.value)} name='message' required></TextArea>
                 <Button>Submit</Button>
             </Form>
+            </div>
         </Body>
     )
 }
 
 
 const Info = styled.div`
-    max-width: 600px;
     padding: 20px;
 
     
@@ -70,7 +72,6 @@ const Form = styled.form`
     box-shadow: 0px 0px 8px #aaa;
     padding: 20px;
     border-radius: 8px;
-    max-width: 700px;
 
     @media (max-width: 600px) {
         box-shadow: none;
@@ -86,11 +87,12 @@ const Center = styled.div`
 `
 const Body = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: auto;
     font-size: 18px;
     padding: 20px;
+    width: 100%;    
+    max-width: 1200px;
 `
 
 const Button = styled.button`
