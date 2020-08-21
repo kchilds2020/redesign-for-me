@@ -80,7 +80,7 @@ const Body = styled.div`
 `
 
 export const CallToAction = styled.button`
-    margin: 20px;
+    margin: 20px 0px;
     border: none;
     padding: 5px;
     background-color: rgb(44, 114, 211);

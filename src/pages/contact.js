@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { FcPhone } from "react-icons/fc";
+import { FiPhoneCall } from "react-icons/fi";
 import styled from "styled-components"
 
 const Contact = () => {
@@ -37,16 +37,13 @@ const Contact = () => {
 
     return (
         <Body>
-                <Center><h2><FcPhone size={40}/> Contact </h2></Center>
-            {/* <Form onSubmit={handleSubmit} style={{border: 'none', margin: '0px'}} name="contact" >
-                <Field type='text' value={text} setValue={setText} label='Name' labelPos='top' name='name'/>
-                <Field type='email' value={email} setValue={setEmail} label='Email Address' labelPos='top' name='email'/>
-                <Field type='phone' value={phone} setValue={setPhone} label='Phone Number' labelPos='top' name='number'/>
-                <label>Message</label>
-                <TextArea value={message} onChange={e => setMessage(e.target.value)} name='message' required></TextArea>
-                <Button>Submit</Button>
-            </Form> */}
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <Info>
+                <h2>Contact Us for a Free Quote! </h2>
+                <p>Please complete the form and I will get back to you as soon as possible! You can also email me at kevinchilds@redesignforme.com.</p>
+            </Info>
+                
+            <Form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <Center><h2>Contact <FiPhoneCall size={30} style={{color: ' #108db8'}}/></h2></Center>
                <input type="hidden" name="form-name" value="contact" />
                 <label>Name</label>
                 <Input type="text" value = {name} onChange = {(e) => {setName(e.target.value)}} name = "name"/>
@@ -57,10 +54,29 @@ const Contact = () => {
                 <label>Message</label>
                 <TextArea value={message} onChange={e => setMessage(e.target.value)} name='message' required></TextArea>
                 <Button>Submit</Button>
-            </form>
+            </Form>
         </Body>
     )
 }
+
+
+const Info = styled.div`
+    max-width: 600px;
+    padding: 20px;
+
+    
+`
+const Form = styled.form`
+    box-shadow: 0px 0px 8px #aaa;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+
+    @media (max-width: 600px) {
+        box-shadow: none;
+        padding: 0px;
+  }
+`
 
 const Center = styled.div`
     display: flex;
@@ -69,7 +85,9 @@ const Center = styled.div`
     margin-top: 20px;
 `
 const Body = styled.div`
-    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
     font-size: 18px;
     padding: 20px;
