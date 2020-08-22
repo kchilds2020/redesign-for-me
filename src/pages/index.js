@@ -127,7 +127,8 @@ const Background = styled.img`
 `
 
 const Logo = styled.img`
-    width: 60%;
+    width: 250px;
+    height: 250px;
     
 `
 
