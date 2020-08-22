@@ -9,7 +9,7 @@ export default () => {
     return (
         <>
         <Header>
-            <div style={{height: '100px'}}></div>
+            {/* <div style={{height: '50px'}}></div> */}
             <Background src = {background}/>
             <Title>Redesign for Me</Title>
             <TagLine>Web Solutions Made Simple</TagLine>
@@ -18,25 +18,24 @@ export default () => {
                 <CallToAction onClick={() => window.location.href="/services"}>Services</CallToAction>               
             </FDRow>
         </Header>
-        <Section> 
-            <SecInfo style={{display: 'flex', justifyContent: 'center', backgroundColor: 'transparent'}}>
-            <Logo src={picture} style={{display: 'flex', justifyContent: 'center'}}/>
-            </SecInfo>
-            <SecInfo>
+        {/* <Section style={{justifyContent: 'center'}}> 
+            <SecInfo style= {{width: '100%', maxWidth: '800px'}}>
             <h1>About</h1>
             <Paragraph>
-            Redesign For Me is a Web Development Company that focuses on designing and hosting websites and web applications.
+                Redesign For Me is a Web Development Company that focuses on designing and hosting websites and web applications.
             </Paragraph>
             <Paragraph>
-RFM would like to help businesses get the recognition they deserve by modern website development. You will be working with an Accredited Software Engineer to ensure the job gets done right.
+                RFM would like to help businesses get the recognition they deserve by modern website development. You will be working with an Accredited Software Engineer to ensure the job gets done right.
             </Paragraph>
             </SecInfo>
-        </Section>
+        </Section> */}
         {/* <SecDiv></SecDiv> */}
         <Section style={{backgroundColor: '#404851'}}> 
             <SecInfo>
                 <h1>Step 1</h1>
-                <Paragraph>We have a meeting to better understand the requirements needed specifically for your site.</Paragraph>
+                <Paragraph>
+                    We have a meeting to better understand the requirements needed specifically for your site
+                </Paragraph>
             </SecInfo>
             <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
             <FcAssistant size={300}/>
@@ -48,7 +47,9 @@ RFM would like to help businesses get the recognition they deserve by modern web
         <Section > 
             <SecInfo>
                 <h1>Step 2</h1>
-                <Paragraph>I document the requirements as well as give a free quote on how much time it will take me to create. </Paragraph>
+                <Paragraph>
+                    I document the requirements as well as give a free quote on how much time it will take to create
+                </Paragraph>
             </SecInfo>
             <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
                 
@@ -60,7 +61,9 @@ RFM would like to help businesses get the recognition they deserve by modern web
         <Section style={{backgroundColor: '#404851'}}> 
             <SecInfo>
                 <h1>Step 3</h1>
-                <Paragraph>I develop the first draft of the site fulfilling the requirements requested in step 2.</Paragraph>
+                <Paragraph>
+                    I develop the first draft of the site fulfilling the requirements requested in step 2
+                </Paragraph>
             </SecInfo>
             <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
                 <FcMultipleDevices size={300}/>
@@ -71,7 +74,9 @@ RFM would like to help businesses get the recognition they deserve by modern web
         <Section > 
             <SecInfo>
                 <h1>Step 4</h1>
-                <Paragraph>Email back the final revisions need for the site. </Paragraph>
+                <Paragraph>
+                    Email back the final revisions needed for the sites
+                </Paragraph>
             </SecInfo>
             <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
                 
@@ -83,7 +88,10 @@ RFM would like to help businesses get the recognition they deserve by modern web
         <Section style={{backgroundColor: '#404851'}}> 
             <SecInfo>
                 <h1>Step 5</h1>
-                <Paragraph>Finish the final revisions and make your site live with your domain!</Paragraph>
+                <Paragraph>
+                    Finish the final revisions and make your site live with your domain!
+                </Paragraph>
+                <CallToAction onClick={() => window.location.href="/contact"} style={{width: '100%', padding: '10px', marginLeft: '0px', marginRight: '0px'}}>Contact to Get Started!</CallToAction>
             </SecInfo>
             <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
                 <FcApproval size={300}/>
@@ -205,8 +213,16 @@ const Title = styled.h2`
     color: white;
     letter-spacing: 10px;
     animation: ${colors} 10s linear infinite;   
+    margin-top: 100px;
+
+    @media (max-width: 800px) {
+    margin-top: 50px;
+    font-size: 46px;
+    letter-spacing: 5px;
+  }
 
     @media (max-width: 600px) {
+    margin-top: 50px;
     font-size: 48px;
     letter-spacing: 5px;
   }

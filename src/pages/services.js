@@ -6,7 +6,13 @@ import { Link, Router } from 'components/Router'
 const Services = () => {
     return (
         <Body>
-            <h1>Are you looking for a Websites or a Web App?</h1>
+            <h1>Services</h1>
+            <p>
+                Redesign For Me is a Web Development Company that focuses on designing and hosting websites and web applications.
+                RFM would like to help businesses get the recognition they deserve by modern website development. You will be working with an Accredited Software Engineer to ensure the job gets done right.
+            </p>
+            <br/>
+            <h2>Are you looking for a Websites or a Web App?</h2>
             <p>From the surface you might not know the difference between the two. They look so similar yet the pricing and functionality between them are very different.</p>
             <br/>
             <h2>Websites</h2>
@@ -80,7 +86,7 @@ const Body = styled.div`
 `
 
 export const CallToAction = styled.button`
-    margin: 20px 0px;
+    margin: 20px 0px 0px 0px;
     border: none;
     padding: 5px;
     background-color: rgb(44, 114, 211);
@@ -90,7 +96,7 @@ export const CallToAction = styled.button`
     border-radius: 8px;
     font-size: 18px;
     box-shadow: 0px 0px 8px #333;
-    transition: 400ms;
+    transition: 400ms;  
 
     :hover{
         background-color: rgb(44, 114, 250);
