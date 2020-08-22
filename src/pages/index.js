@@ -1,8 +1,9 @@
 import React from 'react'
 import background from 'images/background.jpg'
+import secOne from 'images/sec1.jpg'
 import styled, {keyframes} from 'styled-components'
-import picture from 'images/Official-RFM-Logo.png'
-import { Link, Router } from 'components/Router'
+import picture from 'images/logo.png'
+import { FcPrint, FcMultipleDevices, FcAssistant, FcShipped, FcSurvey, FcApproval } from "react-icons/fc";
 
 export default () => {
     return (
@@ -18,8 +19,8 @@ export default () => {
             </FDRow>
         </Header>
         <Section> 
-            <SecInfo style={{backgroundColor: 'white'}}>
-            <Logo src={picture}/>
+            <SecInfo style={{display: 'flex', justifyContent: 'center', backgroundColor: 'transparent'}}>
+            <Logo src={picture} style={{display: 'flex', justifyContent: 'center'}}/>
             </SecInfo>
             <SecInfo>
             <h1>About</h1>
@@ -31,13 +32,85 @@ RFM would like to help businesses get the recognition they deserve by modern web
             </Paragraph>
             </SecInfo>
         </Section>
-        <SecDiv></SecDiv>
+        {/* <SecDiv></SecDiv> */}
+        <Section style={{backgroundColor: '#404851'}}> 
+            <SecInfo>
+                <h1>Step 1</h1>
+                <Paragraph>We have a meeting to better understand the requirements needed specifically for your site.</Paragraph>
+            </SecInfo>
+            <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
+            <FcAssistant size={300}/>
+            </SecInfo>
+
+            
+        </Section>
+        {/* <SecDiv></SecDiv> */}
+        <Section > 
+            <SecInfo>
+                <h1>Step 2</h1>
+                <Paragraph>I document the requirements as well as give a free quote on how much time it will take me to create. </Paragraph>
+            </SecInfo>
+            <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
+                
+                <FcPrint size={300}/>
+            </SecInfo>
+            
+        </Section>
+        {/* <SecDiv></SecDiv> */}
+        <Section style={{backgroundColor: '#404851'}}> 
+            <SecInfo>
+                <h1>Step 3</h1>
+                <Paragraph>I develop the first draft of the site fulfilling the requirements requested in step 2.</Paragraph>
+            </SecInfo>
+            <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
+                <FcMultipleDevices size={300}/>
+            </SecInfo>
+            
+        </Section>
+
+        <Section > 
+            <SecInfo>
+                <h1>Step 4</h1>
+                <Paragraph>Email back the final revisions need for the site. </Paragraph>
+            </SecInfo>
+            <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
+                
+                <FcSurvey size={300}/>
+            </SecInfo>
+            
+        </Section>
+        {/* <SecDiv></SecDiv> */}
+        <Section style={{backgroundColor: '#404851'}}> 
+            <SecInfo>
+                <h1>Step 5</h1>
+                <Paragraph>Finish the final revisions and make your site live with your domain!</Paragraph>
+            </SecInfo>
+            <SecInfo style={{display: 'flex', justifyContent: 'center'}}>
+                <FcApproval size={300}/>
+            </SecInfo>
+            
+        </Section>
+        
         </>
     )
 }
 
+const Img = styled.img`
+    position: fixed;
+`
+
 const SecDiv = styled.div`
-    height: 300px;
+    
+    background-image: url(${secOne});
+
+  /* Set a specific height */
+  height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 
 const Paragraph = styled.p`
@@ -54,11 +127,12 @@ const Background = styled.img`
 `
 
 const Logo = styled.img`
-    width: 100%;
+    width: 60%;
+    
 `
 
 const Section = styled.div`
-    background-color: white;
+    background-color: #343a40;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -70,7 +144,8 @@ const SecInfo = styled.div`
     width: 500px;
     height: 100%;
     padding: 10px;
-    background-color: #f4f4f4;
+    ${'' /* background-color: #404851; */}
+    color: #f4f4f4;
     border-radius: 4px;
     height: auto;
 `
