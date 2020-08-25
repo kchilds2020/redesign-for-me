@@ -18,34 +18,34 @@
     [
       "react-static-plugin-favicons",
       {
-        "outputDir": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\dist",
-        "inputFile": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\logo.png"
+        "outputDir": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\dist",
+        "inputFile": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\logo.png"
       }
     ],
     [
-      "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
+      "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\node_modules\\react-static-plugin-source-filesystem\\node.api.js",
       {
-        "location": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\src\\pages"
+        "location": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\src\\pages"
       }
     ],
-    "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
-    "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
-    "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes"
+    "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\node_modules\\react-static-plugin-reach-router\\browser.api.js",
+    "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\node_modules\\react-static-plugin-sitemap\\dist\\node.api.js",
+    "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me"
   ],
   "paths": {
-    "ROOT": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes",
-    "SRC": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\src",
-    "DIST": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\dist",
-    "ASSETS": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\dist",
-    "PLUGINS": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\plugins",
-    "TEMP": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\tmp",
-    "ARTIFACTS": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\artifacts",
-    "PUBLIC": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\public",
-    "NODE_MODULES": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\node_modules",
-    "EXCLUDE_MODULES": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\node_modules",
-    "PACKAGE": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\package.json",
-    "HTML_TEMPLATE": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\dist\\index.html",
-    "STATIC_DATA": "C:\\Users\\kchil\\Documents\\GitHub\\testing-static-routes\\dist\\staticData"
+    "ROOT": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me",
+    "SRC": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\src",
+    "DIST": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\dist",
+    "ASSETS": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\dist",
+    "PLUGINS": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\plugins",
+    "TEMP": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\tmp",
+    "ARTIFACTS": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\artifacts",
+    "PUBLIC": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\public",
+    "NODE_MODULES": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\node_modules",
+    "EXCLUDE_MODULES": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\node_modules",
+    "PACKAGE": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\package.json",
+    "HTML_TEMPLATE": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\dist\\index.html",
+    "STATIC_DATA": "C:\\Users\\kchil\\Documents\\GitHub\\redesign-for-me\\dist\\staticData"
   },
   "siteRoot": "/",
   "basePath": "",

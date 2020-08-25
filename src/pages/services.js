@@ -12,7 +12,7 @@ const Services = () => {
                 RFM would like to help businesses get the recognition they deserve by modern website development. You will be working with an Accredited Software Engineer to ensure the job gets done right.
             </p>
             <br/>
-            <h2>Are you looking for a Websites or a Web App?</h2>
+            <h2>Are you looking for a Website or a Web App?</h2>
             <p>From the surface you might not know the difference between the two. They look so similar yet the pricing and functionality between them are very different.</p>
             <br/>
             <h2>Websites</h2>
